@@ -34,8 +34,8 @@ def save_inventory():
         with open(INVENTORY_FILE,"w", encoding="utf-8") as f:
             f.writelines("name,category,price,quantity\n")
             for i in inventory:
-                str = f"{i['name']},{i['category']},{i['price']},{i['quantity']}\n"
-                f.writelines(str)
+                line = f"{i['name']},{i['category']},{i['price']},{i['quantity']}\n"
+                f.writelines(line)
     except FileNotFoundError:
         print("File not exist!")
 
