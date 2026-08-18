@@ -37,3 +37,18 @@
 - Reading the file on the very first run, when it doesn't exist yet, must be
   caught as `FileNotFoundError` and not crash
 
+## Commit message convention
+`type: short description`.
+
+- `feat:` — a new feature
+- `fix:` — a bug fix
+- `refactor:` — code change that isn't a feature or a fix
+- `docs:` — documentation only
+- `chore:` — everything else (tooling, config, cleanup)
+
+Example:
+```
+feat: add NumPy analysis submenu
+refactor: split main.py into menu.py and inventory_operations.py
+```
+
